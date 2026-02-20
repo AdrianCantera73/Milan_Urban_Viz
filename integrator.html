@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Milan Injustice Index</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #f3f4f6; }
+        .card-hover:hover { transform: translateY(-4px); box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1); }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
+
+    <div class="max-w-4xl w-full space-y-8">
+        
+        <!-- Header -->
+        <div class="text-center">
+            <h1 class="text-4xl font-extrabold text-gray-900 tracking-tight sm:text-5xl">
+                Milan Injustice Index
+            </h1>
+            <p class="mt-4 max-w-2xl text-xl text-gray-500 mx-auto">
+                Select a dataset to explore the spatial distribution of inequalities.
+            </p>
+        </div>
+
+        <!-- Grid de Tarjetas -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-10">
+
+            <!-- Card 1: General -->
+            <a href="milan_injustice_map_def.html" target="_blank" class="block bg-white overflow-hidden rounded-xl border border-gray-200 shadow-sm transition duration-300 card-hover group">
+                <div class="p-6">
+                    <div class="flex items-center justify-between mb-4">
+                        <h3 class="text-lg font-bold text-gray-900 group-hover:text-blue-600 transition-colors">General Index</h3>
+                        <span class="bg-gray-100 text-gray-600 text-xs font-semibold px-2.5 py-0.5 rounded">All Ages</span>
+                    </div>
+                    <p class="text-gray-600 text-base leading-relaxed">
+                        Visualizing social injustices by looking at the data in a generic way.
+                    </p>
+                </div>
+                <div class="bg-gray-50 px-6 py-3 border-t border-gray-100 flex items-center text-sm font-medium text-blue-600 group-hover:text-blue-800">
+                    Open Map &rarr;
+                </div>
+            </a>
+
+            <!-- Card 2: 18-30 -->
+            <a href="milan_injustice_map_def_18-30.html" target="_blank" class="block bg-white overflow-hidden rounded-xl border border-gray-200 shadow-sm transition duration-300 card-hover group">
+                <div class="p-6">
+                    <div class="flex items-center justify-between mb-4">
+                        <h3 class="text-lg font-bold text-gray-900 group-hover:text-emerald-600 transition-colors">Cohort 18-30</h3>
+                        <span class="bg-emerald-100 text-emerald-700 text-xs font-semibold px-2.5 py-0.5 rounded">Young Adults</span>
+                    </div>
+                    <p class="text-gray-600 text-base leading-relaxed">
+                        Visualizing social injustices through the lens of young adults (18-30).
+                    </p>
+                </div>
+                <div class="bg-gray-50 px-6 py-3 border-t border-gray-100 flex items-center text-sm font-medium text-emerald-600 group-hover:text-emerald-800">
+                    Open Map &rarr;
+                </div>
+            </a>
+
+            <!-- Card 3: 30-60 -->
+            <a href="milan_injustice_map_def_30-60.html" target="_blank" class="block bg-white overflow-hidden rounded-xl border border-gray-200 shadow-sm transition duration-300 card-hover group">
+                <div class="p-6">
+                    <div class="flex items-center justify-between mb-4">
+                        <h3 class="text-lg font-bold text-gray-900 group-hover:text-indigo-600 transition-colors">Cohort 30-60</h3>
+                        <span class="bg-indigo-100 text-indigo-700 text-xs font-semibold px-2.5 py-0.5 rounded">Adults</span>
+                    </div>
+                    <p class="text-gray-600 text-base leading-relaxed">
+                        Visualizing social injustices through the lens of adults (30-60).
+                    </p>
+                </div>
+                <div class="bg-gray-50 px-6 py-3 border-t border-gray-100 flex items-center text-sm font-medium text-indigo-600 group-hover:text-indigo-800">
+                    Open Map &rarr;
+                </div>
+            </a>
+
+            <!-- Card 4: 60+ -->
+            <a href="milan_injustice_map_def_60.html" target="_blank" class="block bg-white overflow-hidden rounded-xl border border-gray-200 shadow-sm transition duration-300 card-hover group">
+                <div class="p-6">
+                    <div class="flex items-center justify-between mb-4">
+                        <h3 class="text-lg font-bold text-gray-900 group-hover:text-rose-600 transition-colors">Cohort 60+</h3>
+                        <span class="bg-rose-100 text-rose-700 text-xs font-semibold px-2.5 py-0.5 rounded">Elderly</span>
+                    </div>
+                    <p class="text-gray-600 text-base leading-relaxed">
+                        Visualizing social injustices through the lens of the elderly (60+).
+                    </p>
+                </div>
+                <div class="bg-gray-50 px-6 py-3 border-t border-gray-100 flex items-center text-sm font-medium text-rose-600 group-hover:text-rose-800">
+                    Open Map &rarr;
+                </div>
+            </a>
+
+        </div>
+        
+        <!-- Author Footer (Updated) -->
+        <div class="mt-24 text-center text-gray-400">
+            <p class="font-medium">Author Adrian Cantera Macías</p>
+            <p class="mt-1 tracking-widest font-semibold text-xs uppercase opacity-70">POLIMI</p>
+        </div>
+
+    </div>
+
+</body>
+</html>
